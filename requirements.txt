@@ -1,0 +1,14 @@
+dash==4.0.0
+
+plotly==6.5.2
+
+pandas==3.0.1
+
+numpy==1.26.4
+
+geopandas==1.1.2
+
+
+ejecutar: 
+
+pip install -r requirements.txt
