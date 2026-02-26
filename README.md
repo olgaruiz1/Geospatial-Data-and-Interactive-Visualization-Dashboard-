@@ -53,17 +53,27 @@ pip install -r requirements.txt
 ## Expected file structure
 geospatial_data_and_interactive_visualization_dashboard/
 │
+
 ├── data/
+
 │   ├── PRIO-GRID_Yearly_Variables.csv
+
 │   ├── GEDEvent_v25_1.csv
-│   └── priogrid_cellshp/      
+
+│   └── priogrid_cellshp/    
+
 │       ├── priogrid_cell.shp
+
 │       ├── priogrid_cell.shx
+
 │       ├── priogrid_cell.dbf
+
 │       └── (other shapefile components)
 
 ├── interactive_dashboard.ipynb
+
 ├── README.md
+
 └── requirements.txt
 
 ## Some design choices
