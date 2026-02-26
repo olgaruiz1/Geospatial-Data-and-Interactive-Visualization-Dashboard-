@@ -9,7 +9,7 @@ The analysis combines two datasets:
 -	PRIO-GRID: provides drought intensity, nightlights (a rough measure of economic activity) and population inside a grid of cells about 55 km wide.
 - UCDP Georeferenced Event Dataset (GED): records of organised violence, each pinned to a specific cell and year.
   
-The result is a panel dataset covering 255 cells over 10 years. Then an interactive dashboard was built with Dash and Plotly so users can click, slide and explore how the pieces fit together.
+The result is a panel dataset covering 255 cells over 10 years. Then an interactive dashboard was built with Dash and Plotly so users can click, slide and explore how the pieces fit together. This was built in a Jupyter notebook.
 
 ## Contents
 - Clean, documented code for loading, merging and checking the data.
@@ -23,6 +23,7 @@ The result is a panel dataset covering 255 cells over 10 years. Then an interact
 
 ## Requirements
 All the code is in a Jupyter notebook. You will need Python and the following libraries:
+
 dash==4.0.0
 
 plotly==6.5.2
@@ -33,23 +34,36 @@ numpy==1.26.4
 
 geopandas==1.1.2
 
-## Usage
-1. Clone or download this repository.
-2. Place the data files in a folder called "data" next to the notebook.
-3. Open the notebook "analysis_dashboard.ipynb" in JupyterLab.
-4. Run the cells in order. The notebook is heavily commented, so you will see what happens at each step.
-5. The last cell launches the dashboard. By default it opens in a new browser tab, but you can change it to appear inside the notebook if you prefer.
-
-## Repository 
-The repository contains:
-- a folder called "data" where you should place the downloaded files
-- the main notebook "analysis_dashboard.ipynb"
-- this README file
-- a requirements file listing the needed libraries
+install them with
+pip install -r requirements.txt
 
 ## Data sources
-- PRIO-GRID: https://www.prio.org/data
-- UCDP GED: https://ucdp.uu.se/downloads
+
+- From PRIO-GRID (https://www.prio.org/data) the files 'PRIO-GRID_Yearly_Variables.csv' and 'priogrid_cellshp' are needed.
+- From UCDP GED (https://ucdp.uu.se/downloads) the file 'GEDEvent_v25_1.csv' is needed. 
+
+## Usage
+1. Clone or download this repository.
+2. Create a folder named data in the root directory.
+3. Place the downloaded files inside data/ following the structure below.
+4. Open the notebook interactive_dashboard.ipynb in JupyterLab.
+4. Run the cells in order. The notebook is heavily commented, so you will see what happens at each step.
+5. The last cell launches the dashboard. By default it opens inside the notebook, but you can change it to open in a new tab if you prefer.
+
+## Expected file structure
+geospatial_data_and_interactive_visualization_dashboard/
+│
+├── data/
+│   ├── PRIO-GRID_Yearly_Variables.csv
+│   ├── GEDEvent_v25_1.csv
+│   └── priogrid_cellshp/      
+│       ├── priogrid_cell.shp
+│       ├── priogrid_cell.shx
+│       ├── priogrid_cell.dbf
+│       └── (other shapefile components)
+├── interactive_dashboard.ipynb
+├── README.md
+└── requirements.txt
 
 ## Some design choices
 - Dot size uses a logarithmic scale so that a few extreme cells do not drown out the rest.
