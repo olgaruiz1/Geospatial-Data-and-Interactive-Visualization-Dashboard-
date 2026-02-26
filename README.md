@@ -2,6 +2,26 @@
 ## Drought and Conflicts in Afghanistan (1999–2008)
 This repository contains the code and analysis for a geospatial project that explores whether there is a link between agricultural drought, armed conflict and economic activity (using nightlights as a proxy) in Afghanistan between 1999 and 2008. It includes a full workflow from raw data to an interactive dashboard.
 
+## The dashboard (GIFs)
+- Exploring years (year slider updates all charts)
+  
+![years_exploration](https://github.com/user-attachments/assets/30895369-13ea-4a95-b6a4-0f1db7f47c46)
+
+
+- Hover (Hover to see cell details)
+
+![hovering](https://github.com/user-attachments/assets/9c108263-fed9-48a2-b8bf-2fe2a106763c)
+
+
+- Click on map → highlights in scatter and violin
+
+![map click](https://github.com/user-attachments/assets/23a2c8c7-199a-4a0c-bb7b-27575e56bf7f)
+
+
+- Click on scatter → highlights in map and violin
+  
+![scatter click](https://github.com/user-attachments/assets/b4a7ebab-dd17-46a5-9cc7-d0678c27e6d4)
+
 ## Overview
 Afghanistan is a country where most people depend on farming. When drought hits, it can have serious consequences. But does that translate into more conflict? That is the question this project started with.
 The analysis combines two datasets:
@@ -9,7 +29,9 @@ The analysis combines two datasets:
 -	PRIO-GRID: provides drought intensity, nightlights (a rough measure of economic activity) and population inside a grid of cells about 55 km wide.
 - UCDP Georeferenced Event Dataset (GED): records of organised violence, each pinned to a specific cell and year.
   
-The result is a panel dataset covering 255 cells over 10 years. Then an interactive dashboard was built with Dash and Plotly so users can click, slide and explore how the pieces fit together. This was built in a Jupyter notebook.
+The result is a panel dataset covering 255 cells over 10 years. Then an interactive dashboard was built with Dash and Plotly so users can click, slide and explore how the pieces fit together. This was built in a Jupyter notebook. 
+
+At the end of the README you can find GIFs showing how the dashboard actually looks like. 
 
 ## Contents
 - Clean, documented code for loading, merging and checking the data.
@@ -79,6 +101,7 @@ geospatial_data_and_interactive_visualization_dashboard/
 ## Some design choices
 - Dot size uses a logarithmic scale so that a few extreme cells do not drown out the rest.
 - On the map, cells with drought data are colored by its intensity; cells without are shown in grey. No misleading color scales.
+
 - Cell IDs are stored in a special property so that when you click a dot, the dashboard knows exactly which cell was selected.
 - Plotly's default selection box is removed to keep the view clean, with yellow highlights instead.
 
