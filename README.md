@@ -47,7 +47,7 @@ pip install -r requirements.txt
 2. Create a folder named data in the root directory.
 3. Place the downloaded files inside data/ following the structure below.
 4. Open the notebook interactive_dashboard.ipynb in JupyterLab.
-4. Run the cells in order. The notebook is heavily commented, so you will see what happens at each step.
+4. Run the cells in order. The notebook is commented, so you will see what happens at each step.
 5. The last cell launches the dashboard. By default it opens inside the notebook, but you can change it to open in a new tab if you prefer.
 
 ## Expected file structure
