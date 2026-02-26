@@ -61,6 +61,7 @@ geospatial_data_and_interactive_visualization_dashboard/
 │       ├── priogrid_cell.shx
 │       ├── priogrid_cell.dbf
 │       └── (other shapefile components)
+
 ├── interactive_dashboard.ipynb
 ├── README.md
 └── requirements.txt
