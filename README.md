@@ -1,6 +1,6 @@
 # Geospatial Data and Interactive Visualization: 
 ## Drought and Conflicts in Afghanistan (1999–2008)
-This repository contains the code and analysis for a geospatial project that explores whether there is a link between agricultural drought, armed conflict and economic activity (using nightlights as a proxy) in Afghanistan between 1999 and 2008. It includes a full workflow from raw data to an interactive dashboard.
+This repository contains the code and analysis for a geospatial project that explores whether there is a link between agricultural drought, armed conflict and nightlight time (using it as a proxy) in Afghanistan between 1999 and 2008. It includes a full workflow from raw data to an interactive dashboard.
 
 ## The dashboard (GIFs)
 - Exploring years (year slider updates all charts)
