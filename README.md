@@ -33,7 +33,7 @@ The analysis combines two datasets:
   
 The result is a panel dataset covering 255 cells over 10 years. Then an interactive dashboard was built with Dash and Plotly so users can click, slide and explore how the pieces fit together. This was built in a Jupyter notebook. 
 
-At the end of the README you can find GIFs showing how the dashboard actually looks like. 
+At the beginning of the README you can find GIFs showing how the dashboard actually looks like. 
 
 ## Contents
 - Clean, documented code for loading, merging and checking the data.
