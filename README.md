@@ -112,3 +112,9 @@ I am Olga Ruiz. I built this project to learn how to handle geospatial data and 
 
 
 Note: This is an exploratory project, not a causal study. The numbers show patterns, not proof. But I hope the dashboard helps you explore the data.
+
+## References
+Davies, S., et al. (2025). Organized violence 1989–2024, and the challenges of identifying civilian victims. Journal of Peace Research, 62(4).
+Tollefsen, Andreas Forø; Håvard Strand & Halvard Buhaug (2012) PRIO-GRID: A unified spatial data structure. Journal of Peace Research, 49(2): 363-374.
+Tollefsen, Andreas Forø, Karim Bahgat, Jonas Nordkvelle and Halvard Buhaug (2015). PRIO-GRID v.2.0 Codebook. Peace Research Institute Oslo.
+Sundberg, R et al. (2013) Introducing the UCDP Georeferenced Event Dataset. Journal of Peace Research 50(4).
